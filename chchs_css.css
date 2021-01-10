@@ -77,3 +77,29 @@ img {
   border-width: 2px;
   margin: 5px 40px;
 }
+
+.buffer {
+  height: 5rem;
+}
+
+h2 {
+  justify-content: flex-start;
+  font-family: "Comfortaa";
+  font-size: 60px;
+  border-bottom: 4px solid #0932A1;
+  width: 250px;
+  text-align: center;
+  margin: 0px 100px;
+  margin-bottom: 20px;
+}
+
+.nota {
+  justify-content: space-between;
+  font-family: "Comfortaa";
+  font-size: 20px;
+  border: 2px solid #0932A1;
+  width: 250px;
+  text-align: center;
+  margin: 0px 100px;
+  margin-bottom: 20px;
+}
