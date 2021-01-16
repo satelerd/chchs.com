@@ -1,0 +1,143 @@
+/*html {
+	background: url(fondo-estrellas.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}*/
+
+.titulo {
+	color: black;
+	justify-content: center;
+	font-family: "Comfortaa";
+	font-size: 80px;
+	border-bottom: 4px solid #0932A1;
+	width: 520px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.imagenes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+img {
+	width: 300px;
+	height: 300px;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	margin: 15px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	background-color: #bbb;
+	color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+	background-color: #0932A1;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+	margin: 15px 10px;
+}
+
+.team p {
+	border: 3px solid black;
+	border-width: 2px;
+	margin: 5px 40px;
+}
+
+.buffer {
+	height: 5rem;
+}
+
+/*.notass {
+	margin-left: 100px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}*/
+
+h2 {
+	color: black;
+	justify-content: flex-start;
+	font-family: "Comfortaa";
+	font-size: 60px;
+	border-bottom: 4px solid #0932A1;
+	width: 250px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+.coment {
+	width: 500px;
+}
+
+.nota p {
+	border: 3px solid #0932A1;
+	
+}
+
+.nota ul{
+	color: black;
+	font-family: "Comfortaa";
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	display: inline-block;
+
+	margin-left: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-template-rows: 1fr;
+	grid-gap: 20px;
+}
+
+input {
+	font-size: 1.3rem;
+	width: 100%;
+	height: 1.6rem;
+}
+
+button {
+	font-size: 1.5rem;
+}
